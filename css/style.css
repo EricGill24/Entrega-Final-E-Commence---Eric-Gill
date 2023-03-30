@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #222;
+}
+header{
+    margin-top: 10px;
+}
+nav{
+    background-color: rgb(87, 87, 87);
+    
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+ul{
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    gap: 72px;
+}
+ul li{
+    list-style: none;
+    background-color: rgb(87, 87, 87);
+}
+a{
+    background-color: rgb(87, 87, 87);
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    padding: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+ul:hover li a{
+    color: #30edf4;
+}
+ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
