@@ -75,7 +75,7 @@ const productos = [
     {
         id: "parches",
         titulo: "Parches",
-        imagen: "./img/ParchesPSa.jpg",
+        imagen: "./img/ParchesPSA.jpg",
         categoria:{
             nombre:"parches",
             id: "Accesorios"
