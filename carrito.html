@@ -10,15 +10,29 @@
 </head>
 <body>
     <div class="wrap">
+        <header class="header-mobile">
+            <h1 class="logo">Mercado PSA</h1>
+            <button id="open-menu" class="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
         <aside>
+            <button id="close-menu" class="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Mercado PSA</h1>
+            </header>
             <nav>
                 <ul class="menu">
                     <li>
-                        <a class="boton-menu boton-volver" href="./index.html"><button><i class="bi bi-arrow-return-left"></i>Seguir comprando</button>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-return-left"></i> Seguir comprando
                         </a>
                     </li>
                     <li>
-                        <a class="boton-menu boton-carrito active" href="./carrito.html"><button>Carrito</button>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito
                         </a>
                     </li>
                 </ul>
@@ -52,7 +66,7 @@
             </div>
         </main>
     </div>
-
     <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
