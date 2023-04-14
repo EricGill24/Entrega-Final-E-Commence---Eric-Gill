@@ -98,13 +98,12 @@ nav{
 }
 
 a, .boton-volver button, .boton-carrito button{
-    background-color: rgb(87, 87, 87);
+    background-color:transparent;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
     letter-spacing: .5px;
     transition: 0.5s ease;
     cursor: pointer;
