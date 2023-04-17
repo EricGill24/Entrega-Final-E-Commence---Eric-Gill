@@ -1,129 +1,12 @@
-const productos = [
-    //INDUMENTARIA
-    {
-        id: "quepis",
-        titulo: "Quepis",
-        imagen: "./img/QuepiPSA.jpg",
-        categoria:{
-            nombre:"quepis",
-            id: "Indumentaria"
-        },
-        precio: 4500,
-    },
-    {
-        id: "remera",
-        titulo: "Remera",
-        imagen: "./img/Remera PSA.jpg",
-        categoria:{
-            nombre:"remera",
-            id: "Indumentaria"
-        },
-        precio: 10000,
-    },
-    {
-        id: "pantalon",
-        titulo: "Pantalon",
-        imagen: "./img/PantalonPSA.jpg",
-        categoria:{
-            nombre:"pantalon",
-            id: "Indumentaria"
-        },
-        precio: 14000,
-    },
-    {
-        id: "botas",
-        titulo: "Botas",
-        imagen: "./img/BotasPSA.jpg",
-        categoria:{
-            nombre:"botas",
-            id: "Indumentaria"
-        },
-        precio: 12000,
-    },
-    {
-        id: "campera",
-        titulo: "Campera",
-        imagen: "./img/CamperaPSA.jpg",
-        categoria:{
-            nombre:"campera",
-            id: "Indumentaria"
-        },
-        precio: 15500,
-    },
-    // ACCESORIOS
-    {
-        id: "cinturon",
-        titulo: "Cinturon",
-        imagen: "./img/CinturonPSA.jpg",
-        categoria:{
-            nombre:"cinturon",
-            id: "Accesorios"
-        },
-        precio: 5500,
-    },
-    
-    {
-        id: "guantes",
-        titulo: "Guantes",
-        imagen: "./img/GuantesPSA.jpg",
-        categoria:{
-            nombre:"guantes",
-            id: "Accesorios"
-        },
-        precio: 3500,
-    },
-    {
-        id: "parches",
-        titulo: "Parches",
-        imagen: "./img/ParchesPSA.jpg",
-        categoria:{
-            nombre:"parches",
-            id: "Accesorios"
-        },
-        precio: 900,
-    },
-    //ARMAMENTO
-    {
-        id: "cachiporra",
-        titulo: "Cachiporra",
-        imagen: "./img/Tonfa.jpg",
-        categoria:{
-            nombre:"cachiporra",
-            id: "Armamento"
-        },
-        precio: 7000,
-    },
-    {
-        id: "pistola",
-        titulo: "Pistola",
-        imagen: "./img/PistolaPSA.jpg",
-        categoria:{
-            nombre:"pistola",
-            id: "Armamento"
-        },
-        precio: 72000,
-    },
-    {
-        id: "municion",
-        titulo: "Munición (x250)",
-        imagen: "./img/Municion.jpg",
-        categoria:{
-            nombre:"municion",
-            id: "Armamento"
-        },
-        precio: 2500,
-    },
-    {
-        id: "chalecoAntibalas",
-        titulo: "Chaleco Antibalas",
-        imagen: "./img/ChalecoAntibalasPSA.jpg",
-        categoria:{
-            nombre:"chaleco antibalas",
-            id: "Armamento"
-        },
-        precio: 22000,
-    }
-];
+let productos = [];
+const url = "./js/productos.json";
+fetch(url)
+    .then(response => response.json())
+    .then(json => {
+        productos = json;
+        cargarProductos(productos);
+    });
+
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
@@ -196,6 +79,27 @@ if(productosEnCarritoLS) {
 
 
 function agregarAlCarrito(e){
+
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+        background: "linear-gradient(to right, #013, #023)",
+        borderRadius: "2rem",
+        textTransform: "uppercase",
+        fontSize: ".75rem"
+        },
+        offset: {
+            x: '1rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '1rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 

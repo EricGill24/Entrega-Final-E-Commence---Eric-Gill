@@ -1,0 +1,126 @@
+
+[
+    {
+        "id": "quepis",
+        "titulo": "Quepis",
+        "imagen": "./img/QuepiPSA.jpg",
+        "categoria":{
+            "nombre":"quepis",
+            "id": "Indumentaria"
+        },
+        "precio": 4500
+    },
+    {
+        "id": "remera",
+        "titulo": "Remera",
+        "imagen": "./img/Remera PSA.jpg",
+        "categoria":{
+            "nombre":"remera",
+            "id": "Indumentaria"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon",
+        "titulo": "Pantalon",
+        "imagen": "./img/PantalonPSA.jpg",
+        "categoria":{
+            "nombre":"pantalon",
+            "id": "Indumentaria"
+        },
+        "precio": 14000
+    },
+    {
+        "id": "botas",
+        "titulo": "Botas",
+        "imagen": "./img/BotasPSA.jpg",
+        "categoria":{
+            "nombre":"botas",
+            "id": "Indumentaria"
+        },
+        "precio": 12000
+    },
+    {
+        "id": "campera",
+        "titulo": "Campera",
+        "imagen": "./img/CamperaPSA.jpg",
+        "categoria":{
+            "nombre":"campera",
+            "id": "Indumentaria"
+        },
+        "precio": 15500
+    },
+    
+    {
+        "id": "cinturon",
+        "titulo": "Cinturon",
+        "imagen": "./img/CinturonPSA.jpg",
+        "categoria":{
+            "nombre":"cinturon",
+            "id": "Accesorios"
+        },
+        "precio": 5500
+    },
+    
+    {
+        "id": "guantes",
+        "titulo": "Guantes",
+        "imagen": "./img/GuantesPSA.jpg",
+        "categoria":{
+            "nombre":"guantes",
+            "id": "Accesorios"
+        },
+        "precio": 3500
+    },
+    {
+        "id": "parches",
+        "titulo": "Parches",
+        "imagen": "./img/ParchesPSA.jpg",
+        "categoria":{
+            "nombre":"parches",
+            "id": "Accesorios"
+        },
+        "precio": 900
+    },
+    
+    {
+        "id": "cachiporra",
+        "titulo": "Cachiporra",
+        "imagen": "./img/Tonfa.jpg",
+        "categoria":{
+            "nombre":"cachiporra",
+            "id": "Armamento"
+        },
+        "precio": 7000
+    },
+    {
+        "id": "pistola",
+        "titulo": "Pistola",
+        "imagen": "./img/PistolaPSA.jpg",
+        "categoria":{
+            "nombre":"pistola",
+            "id": "Armamento"
+        },
+        "precio": 72000
+    },
+    {
+        "id": "municion",
+        "titulo": "Munición (x250)",
+        "imagen": "./img/Municion.jpg",
+        "categoria":{
+            "nombre":"municion",
+            "id": "Armamento"
+        },
+        "precio": 2500
+    },
+    {
+        "id": "chalecoAntibalas",
+        "titulo": "Chaleco Antibalas",
+        "imagen": "./img/ChalecoAntibalasPSA.jpg",
+        "categoria":{
+            "nombre":"chaleco antibalas",
+            "id": "Armamento"
+        },
+        "precio": 22000
+    }
+]
